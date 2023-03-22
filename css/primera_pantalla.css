@@ -1,0 +1,52 @@
+.fondo{
+box-sizing: border-box;
+
+position: relative;
+width: 1616px;
+height: 2560px;
+
+background: #F5FBFF;
+border: 2px solid #BDE3FF;
+border-radius: 12px;
+}
+
+.barra_busqueda{
+    position: absolute;
+    width: 1504px;
+    height: 66px;
+    left: 48px;
+    top: 64px;
+}
+
+.busqueda{
+position: absolute;
+width: 1366px;
+height: 24px;
+left: 144px;
+top: 85px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
