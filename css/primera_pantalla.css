@@ -1,16 +1,16 @@
-.fondo{
-box-sizing: border-box;
+.fondo {
+    box-sizing: border-box;
 
-position: relative;
-width: 1616px;
-height: 2560px;
+    position: relative;
+    width: 1616px;
+    height: 2560px;
 
-background: #F5FBFF;
-border: 2px solid #BDE3FF;
-border-radius: 12px;
+    background: #F5FBFF;
+    border: 2px solid #BDE3FF;
+    border-radius: 12px;
 }
 
-.barra_busqueda{
+.barra_busqueda {
     position: absolute;
     width: 1504px;
     height: 66px;
@@ -18,35 +18,18 @@ border-radius: 12px;
     top: 64px;
 }
 
-.busqueda{
-position: absolute;
-width: 1366px;
-height: 24px;
-left: 144px;
-top: 85px;
+.busqueda {
+    position: absolute;
+    width: 1366px;
+    height: 24px;
+    left: 144px;
+    top: 85px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.logo {
+    position: relative;
+    width: 112px;
+    height: 112px;
+    left: 112px;
+    top: 256px;
+}
