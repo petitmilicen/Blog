@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">   
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+      
+    </style>
+
+  </head>
+  <body style="background-color: #e9ecef;">
+
+    <nav class="navbar container navbar-expand-lg" style="padding: 15px; background-color: #dee2ff; margin: auto;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Blog</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Donar</a>
+            </li>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-success" type="submit">Buscar</button>
+            </form>
+          </ul>
+          <button class="btn btn-outline-primary" type="submit" onclick="location.href='login.html'">Login</button>
+          <button class="btn btn-primary" type="submit" style="margin-left: 5px;">Registrarse</button>
+        </div>
+      </div>
+    </nav>
+    
+<main class="container" style="position: relative; background-color: #f8f9fa; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); ">
+
+  <div class="row mb-2" style="padding-top: 20px;">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Cocina</strong>
+          <h3 class="mb-0">Titulo</h3>
+          <div class="mb-1 text-muted">Mar 22</div>
+          <p class="card-text mb-auto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut optio voluptatum fugit, quas repellendus quaerat culpa.</p>
+          <a href="" class="stretched-link">Continuar leyendo</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" alt="" style="width: 100%; height: 280px; object-fit: cover; object-position: bottom;">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">Estudios</strong>
+          <h3 class="mb-0">Titulo</h3>
+          <div class="mb-1 text-muted">Mar 22</div>
+          <p class="mb-auto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut optio voluptatum fugit, quas repellendus quaerat culpa.</p>
+          <a href="" class="stretched-link">Continuar leyendo</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="https://i.pinimg.com/736x/93/04/2b/93042b1976c637319d852444740da0ad.jpg" alt="" style="width: 100%; height: 280px; object-fit: cover; object-position: bottom;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-2">
+    <div class="col-md-8">
+
+      <article class="blog-post">
+        <h2 class="blog-post-title mb-1">Titulo 1</h2>
+        <p class="blog-post-meta">Marzo 22, 2023 por <a href="">Diego</a></p>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti maiores numquam asperiores, consequuntur illum aliquid libero quisquam expedita doloremque dicta iure iste cupiditate ut reprehenderit optio error ducimus, dolorum architecto.</p>
+      
+      </article>
+      <hr>
+
+      <article class="blog-post">
+        <h2 class="blog-post-title mb-1">Titulo 2</h2>
+        <p class="blog-post-meta">Marzo 22, 2023 por <a href="">Diego</a></p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta blanditiis dolorum quis laborum veniam adipisci excepturi, ipsam earum repellendus nisi enim ipsa culpa voluptas fugit libero? Eos totam repellendus laudantium!</p>
+        
+      </article>
+
+      <hr>
+
+      <article class="blog-post">
+        <h2 class="blog-post-title mb-1">Titulo 3</h2>
+        <p class="blog-post-meta">Marzo 22, 2023 por <a href="">Diego</a></p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis temporibus architecto doloribus a accusamus adipisci vel fuga illum repellendus, aliquid distinctio quibusdam, veritatis numquam consectetur recusandae. Quisquam neque veniam necessitatibus.</p>
+      </article>
+    </div>
+
+    <div class="col-md-4">
+      <div class="position-sticky" style="top: 2rem;">
+        <div class="p-4 mb-3 rounded" style="background-color: #e9ecef">
+          <h4 class="fst-italic">Sobre nosotros</h4>
+          <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe veniam totam sapiente labore assumenda, animi doloremque ducimus nesciunt fugiat debitis maxime esse exercitationem repellat numquam rem facilis blanditiis deleniti itaque.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</html>
