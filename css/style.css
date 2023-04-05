@@ -48,8 +48,6 @@
     margin-bottom: 0;
   }
   
-  
-  
   .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
@@ -101,3 +99,17 @@
   }
   
 
+.carousel {
+  width:860px;
+  
+}
+
+.dark-image{
+  filter: brightness(65%);
+}
+
+
+footer{
+  padding-left: 0%!important;
+  padding-right: 0%!important;
+}
