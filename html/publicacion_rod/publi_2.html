@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">   
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+
+<body style="background-color: #e9ecef;">
+
+    <nav class="navbar container navbar-expand-lg" style="padding: 15px; background-color: #dee2ff; margin: auto;">
+        <a class="navbar-brand" href="/html/index.html">Blog</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/html/index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/html/posts.html">Posts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/donacion.html">Donar</a>
+            </li>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-success" type="submit">Buscar</button>
+            </form>
+          </ul>
+          <button class="btn btn-outline-primary" type="submit" onclick="location.href='login.html'">Login</button>
+          <button class="btn btn-primary" type="submit" style="margin-left: 5px;" onclick="location.href='registrar.html'">Registrarse</button>
+        </div>
+      </div>
+    </nav>
+    
+<main class="container shadow-sm" style="background-color: #f8f9fa; ">
+
+    <div class="container" style="padding-top: 20px;">
+        <div class="row">
+            <div class="">
+                <!-- Post content-->
+                <article class="container">
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">Argentina es uno de los clasificados, Perú fuera: Cómo están los grupos del Sudamericano Sub 17 y a qué hora juega Chile este viernes</h1>
+                        <!-- Post meta content-->
+                        <div class="text-muted fst-italic mb-2">Publicado el 26 de Marzo del 2023</div>
+                        <!-- Post categories-->
+                        <a class="badge bg-secondary text-decoration-none link-light" href="#!">Deportes</a>
+                        <a class="badge bg-secondary text-decoration-none link-light" href="#!">Lacrosse</a>
+                    </header>
+                    <!-- Preview image figure-->
+                    <img class="img-fluid rounded " src="https://static.emol.cl/emol50/Fotos/2023/04/06/file_20230406205849.jpg" alt="..." />
+                    <!-- Post content-->
+                    <section class="mb-5">
+                        <p class="fs-5 mb-4">El Sudamericano Sub 17 se acerca a su final en la fase de grupos y ya se van definiendo los clasificados al hexagonal que dará los cupos al Mundial.</p>
+                        <p class="fs-5 mb-4">Este jueves se jugó la penúltima fecha del Grupo B y quedaron listos los tres clasificados a la próxima instancia.</p>
+                        <p class="fs-5 mb-4">Argentina venció 3-0 a Perú este jueves, mientras que Paraguay derrotó 3-1 a Bolivia. Incaicos y Perú ya quedaron eliminados. Mientras que en el Grupo A, Chile tiene grandes chances de avanzar. Depende de sí mismo. Si gana o empata este viernes ante Ecuador, clasificará. Si pierde, tendrá que esperar que Uruguay no derrote a Brasil.</p>
+                        <h2 class="fw-bolder mb-4 mt-5">Así están los grupos</h2>
+                        <img class="img-fluid rounded " src="https://static.emol.cl/emol50/Fotos/2023/04/05/file_20230405230206.jpg" alt="..." />
+                        <img class="img-fluid rounded " src="https://static.emol.cl/emol50/Fotos/2023/04/06/file_20230406220457.jpg" alt="..." />
+                    </section>
+                </article>
+                <!-- Comments section-->
+                <section class="mb-5">
+                    <div class="card bg-light">
+                        <div class="card-body">
+                            <!-- Comment form-->
+                            <form class="mb-4"><textarea class="form-control" rows="3" placeholder="Comenta esta noticia!"></textarea></form>
+                            <!-- Comment with nested comments-->
+                            <div class="d-flex mb-4">
+                                <!-- Parent comment-->
+                                <div class="flex-shrink-0"><img class="rounded-circle" width="50px" height="50px" src="https://img.freepik.com/premium-photo/profile-portrait-bearded-aggressive-hater-angry-man-wearing-official-dark-style-suit-showing-middle-finger-rude-gesture-disrespect-indoor-studio-shot-isolated-blue-background_416530-28213.jpg" alt="..." /></div>
+                                <div class="ms-3">
+                                    <div class="fw-bold">Omar Monchito Cardozo</div>
+                                    QUE RARO!!! YA NO SALE NADA DEL MEJOR GOL QUE HIZO RACING EN SHILE!!!  TAMPOCO DEL GOLAZO DE PAOLO QUERRERO!!!  QUE RARO NOOO??? AJAJAJAJ
+                                    <!-- Child comment 1-->
+                                    <div class="d-flex mt-4">
+                                        <div class="flex-shrink-0"><img class="rounded-circle" width="50px" height="50px" src="https://i.pinimg.com/1200x/c6/b4/b8/c6b4b8cd86e69ba16f99fec3d4a0aa77.jpg" alt="..." /></div>
+                                        <div class="ms-3">
+                                            <div class="fw-bold">Juan Ortiz</div>
+                                            Pobres cho, los dan pena.
+                                        </div>
+                                    </div>
+                                    <!-- Child comment 2-->
+                                    <div class="d-flex mt-4">
+                                        <div class="flex-shrink-0"><img class="rounded-circle" width="50px" height="50px" src="https://pm1.narvii.com/7541/53ba5e7db2a233b22a05c01b6ef4f1ae3515fbc1r1-475-480v2_uhq.jpg" alt="..." /></div>
+                                        <div class="ms-3">
+                                            <div class="fw-bold">Mario Gobantes</div>
+                                            ¿Será por que es un artículo del Sudamericano Sub 17? (Perdonalo señor) jajajaja
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single comment-->
+                            <div class="d-flex">
+                                <div class="flex-shrink-0"><img class="rounded-circle" width="50px" height="50px" src="https://thumbs.dreamstime.com/b/aficionado-al-f%C3%BAtbol-argentino-que-muestra-el-pulgar-para-arriba-33495115.jpg" alt="..." /></div>
+                                <div class="ms-3">
+                                    <div class="fw-bold">Roman Arturo AR</div>
+                                    Pobres Chilenos... tener que leer en su principal diario una noticia del sub 17 de Argentina!!!! Juaaa Juaaa Juaaa Juaaa, viste que sos colonia!!!!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <p class="mb-0  text-left"><a href="/html/posts_2.html" class="btn btn-primary"> Volver</a></p>
+            </div>
+
+  
+  <div class="container">
+    <footer class="py-3">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="/html/index.html" class="nav-link px-2 text-body-secondary">Inicio</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Preguntas frecuentes</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Sobre nosotros</a></li>
+      </ul>
+      <p class="text-center text-body-secondary">&copy; 2023</p>
+    </footer>
+  </div>
+  
+  </main>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</html>
