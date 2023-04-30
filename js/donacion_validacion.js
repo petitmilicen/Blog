@@ -1,44 +1,54 @@
 $(document).ready(function() {
-    // Selecciona el formulario de donación
-    var form = $('#donacionForm');
-  
-    // Agrega un evento de envío de formulario
-    form.on('submit', function(event) {
-      // Detiene el envío del formulario
+    // Validación del formulario de donación
+    $('#donacionForm').submit(function(event) {
+      // Prevenir envío del formulario si hay errores de validación
       event.preventDefault();
   
-      // Obtiene los valores de los campos
-      var nombre = $('#nombre').val().trim();
-      var monto = $('#monto').val().trim();
-      var mensaje = $('#mensaje').val().trim();
+      // Obtener valores de los campos del formulario
+      var nombre = $('#nombre').val();
+      var email = $('#email').val();
+      var monto = $('#monto').val();
+      var mensaje = $('#mensaje').val();
+      var pago = $('input[name="pago"]:checked').val();
   
-      // Valida que el campo de nombre no esté vacío y contenga solo letras y espacios
-      var nombreRegex = /^[a-zA-Z ]+$/;
-      if (!nombre) {
-        alert('Por favor, ingrese su nombre.');
-        return;
-      } else if (!nombreRegex.test(nombre)) {
-        alert('Por favor, ingrese un nombre válido que contenga solo letras y espacios.');
+      // Validar que el campo de nombre no esté vacío y que no contenga números ni caracteres especiales
+      if (!nombre || !/^[a-zA-Z ]+$/.test(nombre)) {
+        alert('Por favor ingrese su nombre completo sin números ni caracteres especiales');
         return;
       }
   
-      // Valida que el campo de monto sea un número y esté entre 1 y 999999999
-      if (isNaN(monto) || monto < 1 || monto > 999999999) {
-        alert('Por favor, ingrese un monto válido entre $1 y $999.999.999.');
+      // Validar que el campo de correo electrónico sea válido
+      if (!email || !isValidEmail(email)) {
+        alert('Por favor ingrese un correo electrónico válido');
         return;
       }
   
-      // Valida que el campo de mensaje no esté vacío y contenga menos de 100 caracteres
-      if (!mensaje) {
-        alert('Por favor, ingrese un mensaje.');
-        return;
-      } else if (mensaje.length > 100) {
-        alert('Por favor, ingrese un mensaje de menos de 100 caracteres.');
+      // Validar que el campo de monto sea un número mayor a cero y menor o igual a 5000
+      if (!monto || monto <= 0 || monto > 999999999) {
+        alert('Por favor ingrese un monto válido (entre $1 y $999.999.999)');
         return;
       }
   
-      // Envía el formulario si todos los campos son válidos
-      form.submit();
+      // Validar que el campo de mensaje no exceda los 100 caracteres
+      if (mensaje.length > 100) {
+        alert('El mensaje no debe exceder los 100 caracteres');
+        return;
+      }
+  
+      // Validar que se haya seleccionado un método de pago distinto a "Seleccione un método"
+      if (!pago || pago == "#") {
+        alert('Por favor seleccione un método de pago');
+        return;
+      }
+  
+      // Si todo está validado, se envía el formulario
+      this.submit();
     });
+  
+    // Función para validar un correo electrónico
+    function isValidEmail(email) {
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+    }
   });
   

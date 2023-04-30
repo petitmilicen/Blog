@@ -45,17 +45,28 @@
     </nav>
     
 <main class="container shadow-sm" style="background-color: #f8f9fa; ">
+  <br>
+  <h2>Formulario de donación para nuestro blog</h2>
   <form id="donacionForm">
     <div class="mb-3" style="padding-top: 20px;">
         <label for="nombre" class="form-label">Nombre</label>
         <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
       </div>
-
-      <div class="mb-3">
-        <label for="monto" class="form-label">Monto</label>
-        <input type="number" class="form-control" id="monto" name="monto" min="1" max="10000" placeholder="Digite un monto" required>
+      <label for="email">Correo electrónico:</label>
+      <br>
+      <input type="email" class="form-control" id="email" name="email" placeholder="Ingrese su correo electrónico" required>
+      <div class="mb-3"><br>
+        <label for="monto" class="form-label">Monto de la donación</label>
+        <input type="number" class="form-control" id="monto" name="monto" min="1" max="999999999" placeholder="Digite un monto" required>
       </div>
-
+      <label for="pago">Método de pago:</label>
+      <select id="pago" name="pago" class="form-select">
+        <option value="#">Seleccione un método</option>
+        <option value="tarjeta">Tarjeta de crédito</option>
+        <option value="paypal">PayPal</option>
+        <option value="transferencia">Transferencia bancaria</option>
+      </select>
+      <br>
       <div class="mb-3">
         <label for="mensaje" class="form-label">Mensaje (opcional)</label>
         <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Escríbenos un mensaje"></textarea>
