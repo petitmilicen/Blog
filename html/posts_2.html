@@ -8,6 +8,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">   
     <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
+    <!-- Agregar el archivo jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- Agregar tu archivo eliminar_comentarios.js -->
+    <script src="../js/eliminar_publicacion.js"></script>
+    
   </head>
 <body style="background-color: #e9ecef;">
 
@@ -22,7 +27,7 @@
               <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="posts.html">Posts</a>
+              <a class="nav-link" aria-current="page" href="posts.html">Publicaciones</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="donacion.html">Donar</a>
@@ -49,11 +54,8 @@
 
         <p>Un platillo de la cocina italiana que es muy probable que comas todos los dias y que hoy aprenderas hacer y no creeras lo sencillo que es "Pasta casera" hoy en tu hogar.</p>
         <p class="mb-0  text-left"><a href="Publicación Danilo/post2D.html"> seguir leyendo...</a></p>
-        <input type="button" onclick="borrarpost()" value="Borrar Post">
-        <script>
-        function borrarpost() {
-        $("#dan2").remove();
-    }</script>
+        <br>
+        <button type="button" class="borrar-post btn btn-danger">Borrar post</button>
       </article>
 
       <hr>
@@ -64,11 +66,8 @@
 
         <p>El Sudamericano Sub 17 se acerca a su final en la fase de grupos y ya se van definiendo los clasificados al hexagonal que dará los cupos al Mundial.</p>
         <p class="mb-0  text-left"><a href="/html/Publicación Rodrigo/publi_2.html"> Seguir leyendo...</a></p>
-        <input type="button" onclick="borrarpost()" value="Borrar Post">
-        <script>
-        function borrarpost() {
-        $("#rodrigo2").remove();
-    }</script>
+        <br>
+        <button type="button" class="borrar-post btn btn-danger">Borrar post</button>
       </article>
     
       <article class="blog-post" id="rodrigo3">
@@ -76,11 +75,8 @@
         <p class="blog-post-meta">Marzo 12, 2023 por <a href="">Rodrigo Freire Galindo</a></p>
         <p>El mejor básquetbol del mundo tuvo acción.</p>
         <p class="mb-0  text-left"><a href="/html/Publicación Rodrigo/publi_3.html"> Seguir leyendo...</a></p>
-        <input type="button" onclick="borrarpost()" value="Borrar Post">
-        <script>
-        function borrarpost() {
-        $("#rodrigo3").remove();
-    }</script>
+        <br>
+        <button type="button" class="borrar-post btn btn-danger">Borrar post</button>
       </article>
   
     <hr>

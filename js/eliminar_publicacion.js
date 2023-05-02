@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('#remove').click(function() {
-        $("#dan1").remove();
-    })
+  $(".borrar-post").click(function() {
+    $(this).parent().fadeOut();
+  });
 });

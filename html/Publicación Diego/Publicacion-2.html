@@ -7,6 +7,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">   
     <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
+    <!-- jQuery 3.6.4 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- Archivo JS para eliminar comentarios -->
+    <script src="js/eliminar_comentarios.js"></script>
   </head>
 
 <body style="background-color: #e9ecef;">
@@ -79,7 +83,8 @@
                                 <div class="flex-shrink-0"><img class="rounded-circle" width="50px" height="50px" src="https://t4.ftcdn.net/jpg/00/64/67/63/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" alt="..." /></div>
                                 <div class="ms-3">
                                     <div class="fw-bold">Carlos Pérez</div>
-                                    Gracias por este recordatorio. ¡Qué grande Gabriela! 
+                                    Gracias por este recordatorio. ¡Qué grande Gabriela!
+                                    <button class="btn btn-danger btn-sm ms-auto delete-comment" data-comment-id="">Eliminar</button>
                                     <!-- Child comment 1-->
                                 </div>
                             </div>
@@ -89,6 +94,7 @@
                                 <div class="ms-3">
                                     <div class="fw-bold">Ana Torres</div>
                                     ¡Excelente artículo! Mistral es una de mis autoras favoritas.
+                                    <button class="btn btn-danger btn-sm ms-auto delete-comment" data-comment-id="">Eliminar</button>
                                 </div>
                             </div>
                         </div>
