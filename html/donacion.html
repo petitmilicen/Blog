@@ -11,7 +11,7 @@
      <!-- Incluye la librería de JQuery 3.6.4 -->
      <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
      <!-- Incluye el archivo de validación de formulario -->
-     <script src="/js/donacion_validacion.js"></script>
+     <script src="../js/donacion_validacion.js"></script>
 
   </head>
 
@@ -61,20 +61,23 @@
       </div>
       <label for="pago">Método de pago:</label>
       <select id="pago" name="pago" class="form-select">
-        <option value="#">Seleccione un método</option>
+        <option value="">Seleccione un método</option>
         <option value="tarjeta">Tarjeta de crédito</option>
         <option value="paypal">PayPal</option>
         <option value="transferencia">Transferencia bancaria</option>
-      </select>
+      </select>      
       <br>
       <div class="mb-3">
         <label for="mensaje" class="form-label">Mensaje (opcional)</label>
         <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Escríbenos un mensaje"></textarea>
     </div>
 
-    <div class="d-grid gap-2 col-6 mx-auto ">
-        <button class="btn btn-primary" type="submit">Donar <i class="bi bi-heart"></i></button>
-      </div>
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <button class="btn btn-primary" type="submit">Donar <i class="bi bi-heart"></i></button>
+    </div>
+
+    <div id="errores" style="color: red;"></div>
+    <div id="gracias-mensaje" style="display: none;">¡Gracias por tu donación!</div>
     </form>
   <div class="container">
     <footer class="py-3">
